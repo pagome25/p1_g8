@@ -1,0 +1,13 @@
+Cada vez que lo abran:
+git pull
+
+Trabajan normal:
+
+Editan archivos
+
+Guardan (Ctrl + S)
+
+Cuando terminan:
+git add .
+git commit -m "Lo que hayan hecho"
+git push
