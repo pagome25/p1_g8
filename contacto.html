@@ -3,13 +3,12 @@
     
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto | Bistro FDI</title>
 </head>
 
 <body>
   <header>
-    <h1>Bistro FDI</h1>
+    <h1>Contacto</h1>
 
     <nav aria-label="Navegación principal">
       <ul>
@@ -25,60 +24,52 @@
 
   <main>
     <h2>Formulario de contacto</h2>
+    <p>Si quieres más información sobre el proyecto, rellena el formulario:</p>
 
-    <form action="mailto:TU_CORREO@ejemplo.com" method="post" enctype="text/plain">
-      <fieldset>
-        <legend>Datos de contacto</legend>
 
-        <p>
-          <label for="nombre">Nombre</label><br>
-          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
-        </p>
+    <form action="mailto:robernab@ucm.es" method="post" enctype="text/plain">
+      <p>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre">
+      </p>
 
-        <p>
-          <label for="email">Dirección de email de contacto</label><br>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-        </p>
-      </fieldset>
+      <p>
+        <label for="email">Dirección de email de contacto:</label><br>
+        <input type="email" id="email" name="email">
+      </p>
 
       <fieldset>
         <legend>Motivo de la consulta</legend>
+        <input type="radio" id="eval" name="motivo" value="Evaluación">
+        <label for="eval">Evaluación</label><br>
 
-        <p>
-          <input id="motivo-evaluacion" name="motivo" type="radio" value="Evaluación" required>
-          <label for="motivo-evaluacion">Evaluación</label>
-        </p>
+        <input type="radio" id="sug" name="motivo" value="Sugerencias">
+        <label for="sug">Sugerencias</label><br>
 
-        <p>
-          <input id="motivo-sugerencias" name="motivo" type="radio" value="Sugerencias">
-          <label for="motivo-sugerencias">Sugerencias</label>
-        </p>
-
-        <p>
-          <input id="motivo-criticas" name="motivo" type="radio" value="Críticas">
-          <label for="motivo-criticas">Críticas</label>
-        </p>
+        <input type="radio" id="crit" name="motivo" value="Críticas">
+        <label for="crit">Críticas</label>
       </fieldset>
 
       <p>
-        <input id="terminos" name="terminos" type="checkbox" value="Acepto" required>
-        <label for="terminos">Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio</label>
+        <input type="checkbox" id="terminos" name="terminos" value="Acepto">
+        <label for="terminos">Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio.</label>
       </p>
 
       <p>
-        <label for="consulta">Consulta</label><br>
-        <textarea id="consulta" name="consulta" rows="6" cols="40" required></textarea>
+        <label for="consulta">Consulta:</label><br>
+        <textarea id="consulta" name="consulta" rows="6" cols="50"></textarea>
       </p>
 
       <p>
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
       </p>
     </form>
   </main>
 
   <footer>
-    <p>Práctica 1 · Aplicaciones Web 2025/2026</p>
+    <p>Práctica 1 - Aplicaciones Web</p>
   </footer>
+
 </body>
 </html>
