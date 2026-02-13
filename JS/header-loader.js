@@ -13,4 +13,4 @@ fetch('header.html')
       }
     });
   })
-  .catch(err => console.error('Error cargando header:', err));
+  .catch(err => console.error('Error cargando header:', err)); 
