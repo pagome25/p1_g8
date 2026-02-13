@@ -1,0 +1,62 @@
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="header-container">
+    <h1>Bistro FDI</h1>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="detalles.html" aria-current="page">Detalles</a></li>
+        <li><a href="bocetos.html">Bocetos</a></li>
+        <li><a href="miembros.html">Miembros</a></li>
+        <li><a href="planificacion.html">Planificación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= CSS DEL HEADER ================= -->
+<style>
+  /* Contenedor del header */
+  header {
+    background-color: #5d4343;       /* Fondo oscuro */
+    color: #fff;                  /* Texto blanco */
+    padding: 20px 50px;           /* Espacio interno */
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Estilo del título */
+  header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Lista de navegación horizontal */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;  /* Espacio entre enlaces */
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  .nav-list li a.active {
+    color: #f9a825; /* Color de destaque al pasar el mouse o página activa */
+  }
+</style>
